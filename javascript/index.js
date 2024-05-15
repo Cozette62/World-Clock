@@ -19,5 +19,14 @@ function updateTime() {
   parisDateElement.innerHTML = parisTime.format("MMMM Do YYYY");
   parisTimeElement.innerHTML = parisTime.format("h:mm:ss [<small>]A[</small>]");
 }
+
+function updateCity(event) {
+  let cityTimeZone = event.target.value;
+  letcityTime = moment().tz(cityTimeZone);
+  console.log(cityTime.format("MMMM Do YYYY"));
+}
 updateTime();
 setInterval(updateTime, 1000);
+
+let citiesSelect = document.querySelector("#city");
+citiesSelectElement.addEventListeneter("change", updateCity);
