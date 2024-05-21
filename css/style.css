@@ -27,7 +27,7 @@ select {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
   margin: 60px 0;
-  padding: 0 15px 0 15px;
+  padding: 30px;
 }
 
 .city {
